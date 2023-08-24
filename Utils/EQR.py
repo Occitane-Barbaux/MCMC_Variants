@@ -1,3 +1,6 @@
+import numpy as np
+import scipy.stats as sc
+
 ## EQR
 def find_nearest(array, value):
     array = np.asarray(array)
@@ -26,4 +29,4 @@ def EQR_Vector(para_v,T,T1=2050,T2=2100,xlen=1000):
     return [EQR_para(para_v[i],T,T1,T2,xlen)[0][0] for i in range(len(para_v))]
     
     
-    
+#def Find_EQR_IC(m,params,T,T1,T2,ci,xlen=1000):    

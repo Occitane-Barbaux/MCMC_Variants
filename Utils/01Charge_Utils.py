@@ -36,14 +36,18 @@ import arviz #for ess univariate, install with conda install -c conda-forge arvi
 
 
 #Personnal ADD
-sys.path.append(os.path.abspath("/home/barbauxo/Documents/Doctorat/03_Travail/2023_05 Calcul Multimodel/Propre/Utils"))
-
+sys.path.append(os.path.abspath("/home/barbauxo/Documents/Doctorat/03_Travail/2023_08 Clean Run/Utils"))
+from NSSEA_Deroule import *
+from EQR import *
+from data_preparation import *
+#MCMC Addon utilities
+sys.path.append(os.path.abspath("/home/barbauxo/Documents/Doctorat/03_Travail/2023_08 Clean Run/Utils/MCMC"))
 from multiESS import *
 from Utils import *
 from Transitions import *
 from Preparation import *
 from MCMC_Run import *
-from EQR import *
 from Figures import *
 from Full_1Run_Analysis import *
 from Comp_Functions import *
+
